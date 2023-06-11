@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Nunito+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 75%;
+        margin: auto;
+      }
+
+      .anabaslik {
+        margin-top: 10px;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url(img/başlık/about.jpg);
+      }
+
+      .anabaslik .menu ul {
+        display: flex;
+        list-style-type: none;
+      }
+      .anabaslik h1,
+      .anabaslik ul li a {
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        font-family: "Fira Sans", sans-serif;
+      }
+      .anabaslik h1:hover {
+        padding: 10px;
+        background-color: white;
+        color: orange;
+        border-radius: 25px;
+        font-size: 25px;
+      }
+      .anabaslik ul li a {
+        padding: 10px;
+        margin-right: 10px;
+      }
+      .anabaslik ul li a:hover {
+        background-color: orange;
+        border-radius: 25px;
+      }
+      .img img {
+        width: 100%;
+        height: 300px;
+        margin-top: 10px;
+      }
+
+      .satir1 {
+        display: flex;
+
+        width: 100%;
+        margin-top: 50px;
+      }
+      .satir1 .satir1img img {
+        width: 150px;
+        height: 200px;
+      }
+      .satir1 .aciklama h2,
+      .satir1 .aciklama p,
+      .satir1 .aciklama button,
+      .satir3 .ozellik1,
+      .satir3 .ozellik3,
+      .arabaslik1,
+      .arabaslik2,
+      .satir3 .tanitim1 .aciklama1 h2,
+      p,
+      button,
+      .satir3 .tanitim2 .aciklama2,
+      h2,
+      p,
+      button,
+      .kayit input,
+      button,.arabaslik4 h2 {
+        font-family: "Fira Sans", sans-serif;
+      }
+      .satir1 .aciklama {
+        margin-left: 100px;
+      }
+      .satir1 .aciklama h2 {
+        font-size: 35px;
+        margin-bottom: 10px;
+      }
+      .satir1 .aciklama button,
+      .satir3 .aciklama1 button,
+      .satir3 .aciklama2 button {
+        width: 150px;
+        margin-top: 50px;
+        padding: 10px;
+        border-style: solid 1px;
+        background-color: orange;
+        color: white;
+        border-radius: 30px;
+        font-size: 15px;
+      }
+      .satir1 .aciklama button:hover {
+        background-color: white;
+        color: orange;
+      }
+      .satir1:hover {
+        background-color: orange;
+        box-shadow: 5px 5px 5px gray;
+        color: white;
+        border-radius: 25px;
+        padding: 10px;
+      }
+      .arabaslik1 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .satir2 .ozellik1 {
+        margin-right: 50px;
+      }
+      .satir2 .ozellik2 img {
+        width: 150px;
+      }
+      .satir2 .ozellik3 {
+        margin-left: 50px;
+      }
+      .satir2 .ozellik1,
+      .satir2 .ozellik3 {
+        font-size: 10px;
+      }
+
+      .satir2 {
+        display: flex;
+      }
+      .satir2:hover {
+        background-color: orange;
+        box-shadow: 5px 5px 5px gray;
+        color: white;
+        border-radius: 25px;
+        padding: 10px;
+      }
+      .arabaslik2,
+      .arabaslik3 {
+        margin-top: 50px;
+        text-align: center;
+      }
+      .satir3,
+      .satir4 {
+        margin-top: 50px;
+      }
+
+      .satir3 .tanitim1,
+      .tanitim2 {
+        display: flex;
+      }
+      .satir3 .tanitim1 .tanitimimg1 img,
+      .satir3 .tanitim2 .tanitimimg2 img {
+        width: 100%;
+      }
+      .satir3 .tanitim1 .aciklama1 {
+        margin-left: 100px;
+        padding: 20px;
+      }
+      .satir3 .tanitim1 .aciklama1 h2,
+      p,
+      button,
+      .satir3 .tanitim2 .aciklama2,
+      h2,
+      p,
+      button {
+        margin-bottom: 20px;
+      }
+      .satir3 .tanitim2 .tanitimimg2 {
+        margin-left: 100px;
+      }
+      .satir4 {
+        display: flex;
+        margin-bottom: 50px;
+      }
+      .satir4 .foto img {
+        width: 100%;
+        padding: 10px;
+      }
+      .satir4 .foto img:hover {
+        width: 200px;
+      }
+      .kayit {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 50px;
+        color: black;
+      }
+      .kayit .buton input {
+        width: 200px;
+        border-radius: 30px;
+        border-style: none;
+        border: 1px solid black;
+        padding: 5px;
+      }
+      .kayit .buton button {
+        border-radius: 30px;
+        border-style: none;
+        border: 1px solid black;
+        padding: 5px;
+      }
+      .arabaslik4{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .satir6 {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+      }
+      .satir6 .yorum h1 {
+        color: orange;
+        font-family: "BIZ UDPGothic", sans-serif;
+        margin-bottom: 20px;
+      }
+      .satir6 .yorum {
+        padding: 30px;
+      }
+      .satir6 .yorum img {
+        width: 100px;
+        height: 100px;
+        border: 1px solid orange;
+        border-radius: 50%;
+      }
+      @media screen and (max-width:600px) {
+        .container{
+          width: 100%;
+        }
+        .anabaslik h1:hover , .anabaslik ul li a:hover ,.satir1:hover,.satir2:hover {
+         display:block;
+         text-align: center;
+        
+         
+        }
+        
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="anabaslik">
+      <div class="baslik"><h1>OĞUZ&İLETİŞİM</h1></div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Servis</a></li>
+          <li><a href="#">Ürünlerimiz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="img">
+        <img src="./img/slayt/1.jpg" alt="" />
+      </div>
+      <div class="satir1">
+        <div class="satir1img">
+          <img src="./img/1.satır/1.satır.png" alt="1.satir" />
+        </div>
+        <div class="aciklama">
+          <h2>Yeni Teknoloji Saatimiz</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            enim eos vero eligendi libero aliquam laboriosam, ratione laborum
+            sunt ullam!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Officiis enim eos vero eligendi libero aliquam laboriosam, ratione
+            laborum sunt ullam!
+          </p>
+          <button>Satın Al</button>
+        </div>
+      </div>
+
+      <div class="arabaslik1"><h2>Temel Özeliklerimiz</h2></div>
+
+      <div class="satir2">
+        <div class="ozellik1">
+          <img src="./img/2.satır/dokunus.png" alt="dokunus" /><br />
+          <h3>Pürüzsüz Dokunuş</h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur, maxime?
+          </p>
+          <br /><br />
+          <img src="./img/2.satır/dizayn.png" alt="dizayn" /><br />
+          <h3>Zarif Dizayn</h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, in?
+          </p>
+          <br /><br />
+          <img src="img/2.satır/erisim.png" alt="erisim" /><br />
+          <h3>Kolay Erişim</h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit, eum.
+          </p>
+          <br /><br />
+        </div>
+        <div class="ozellik2">
+          <img src="./img/2.satır/2.satır.png" alt="" />
+        </div>
+        <div class="ozellik3">
+          <img src="./img/2.satır/dokunus.png" alt="dokunus" /><br />
+          <h3>Pürüzsüz Dokunuş</h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur, maxime?
+          </p>
+          <br /><br />
+          <img src="./img/2.satır/dizayn.png" alt="dizayn" /><br />
+          <h3>Zarif Dizayn</h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, in?
+          </p>
+          <br /><br />
+          <img src="img/2.satır/erisim.png" alt="erisim" /><br />
+          <h3>Kolay Erişim</h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit, eum.
+          </p>
+          <br /><br />
+        </div>
+      </div>
+      <div class="arabaslik2">
+        <h2>Neden Akıllı Saat Alınır</h2>
+      </div>
+      <div class="satir3">
+        <div class="tanitim1">
+          <div class="tanitimimg1">
+            <img src="img/3.satır/3.satır1.png" alt="" />
+          </div>
+          <div class="aciklama1">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
+              numquam eum consequuntur cupiditate ipsam cum, aliquid neque
+              aliquam labore odio.
+            </p>
+            <button>Ayrıntılı İncele</button>
+          </div>
+        </div>
+        <div class="tanitim2">
+          <div class="aciklama2">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
+              numquam eum consequuntur cupiditate ipsam cum, aliquid neque
+              aliquam labore odio.
+            </p>
+            <button>Ayrıntılı İncele</button>
+          </div>
+          <div class="tanitimimg2">
+            <img src="img/3.satır/3.satır2.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="arabaslik3">
+        <h2>Diğer Modeller</h2>
+      </div>
+      <div class="satir4">
+        <div class="foto">
+          <a href="#"><img src="img/4.satır/5.satır1.png" alt="satir4" /></a>
+        </div>
+        <div class="foto">
+          <a href="#"><img src="img/4.satır/5.satır2.png" alt="satir4" /></a>
+        </div>
+        <div class="foto">
+          <a href="#"><img src="img/4.satır/5.satır3.png" alt="satir4" /></a>
+        </div>
+        <div class="foto">
+          <a href="#"><img src="img/4.satır/5.satır4.png" alt="satir4" /></a>
+        </div>
+        <div class="foto">
+          <a href="#"><img src="img/4.satır/5.satır5.png" alt="satir4" /></a>
+        </div>
+      </div>
+      
+      
+      <div class="kayit">
+        <div class="aciklama">
+          <h2>Bizi Takipte Kal</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            dolore?
+          </p>
+        </div>
+        <div class="buton">
+          <input
+            placeholder="Mail adresinizi giriniz"
+            type="text"
+            id="mail"
+            name="mail"
+          />
+          <button>Gönder</button>
+        </div>
+      </div>
+      <div class="arabaslik4">
+        <h2>Müşteri Deneyimi</h2>
+      <div class="satir6">
+        <div class="yorum">
+          <h1>"</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo
+            numquam, aliquid officia modi, distinctio asperiores iure ad
+            voluptates fugiat, harum sunt? Totam laboriosam harum, alias
+            repudiandae laudantium quod error, eveniet nostrum iusto ipsa aut
+            nam quas numquam odio suscipit minus beatae aperiam consectetur
+            modi. Repellat officia aut libero nostrum!
+          </p>
+          <img src="img/6.satır/6.satır.jpg" alt="satir6" />
+        </div>
+        <div class="yorum">
+          <h1>"</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo
+            numquam, aliquid officia modi, distinctio asperiores iure ad
+            voluptates fugiat, harum sunt? Totam laboriosam harum, alias
+            repudiandae laudantium quod error, eveniet nostrum iusto ipsa aut
+            nam quas numquam odio suscipit minus beatae aperiam consectetur
+            modi. Repellat officia aut libero nostrum!
+          </p>
+          <img src="img/6.satır/6.satır.jpg" alt="satir6" />
+        </div>
+        <div class="yorum">
+          <h1>"</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo
+            numquam, aliquid officia modi, distinctio asperiores iure ad
+            voluptates fugiat, harum sunt? Totam laboriosam harum, alias
+            repudiandae laudantium quod error, eveniet nostrum iusto ipsa aut
+            nam quas numquam odio suscipit minus beatae aperiam consectetur
+            modi. Repellat officia aut libero nostrum!
+          </p>
+          <img src="img/6.satır/6.satır.jpg" alt="satir6" />
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="anabaslik">
+      <div class="baslik"><h1>OĞUZ&İLETİŞİM</h1></div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Servis</a></li>
+          <li><a href="#">Ürünlerimiz</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
